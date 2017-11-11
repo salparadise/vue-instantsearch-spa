@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="container mx-auto my-8">
+            <ul class="list-reset flex mb-8">
+                <li class="mr-6">
+                    <router-link class="text-blue hover:text-blue-darker" to="/">Home</router-link>
+                </li>
+                <li class="mr-6">
+                    <router-link class="text-blue hover:text-blue-darker" to="/search">Search</router-link>
+                </li>
+            </ul>
+            <router-view></router-view>
+        </div>
+    </div>
+    <script src="/dist/app.js"></script>
+</body>
+</html>
